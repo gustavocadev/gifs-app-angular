@@ -10,7 +10,7 @@ export class GifsService {
   gifList: Gif[] = [];
   #tagsHistory: string[] = [];
 
-  #apiKey = import.meta.env['PUBLIC_API_KEY'];
+  #apiKey = '';
   #serviceUrl = 'https://api.giphy.com/v1/gifs/search';
 
   constructor(private readonly http: HttpClient) {
